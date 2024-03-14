@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 #7. train
 
 #data
-X=np.array([np.random.randint(),np.random.randint(),np.random.randint()])
+X=np.array([1,2,3])
 Y=np.array([4,5,6])
 
 #weight, bias 초기화

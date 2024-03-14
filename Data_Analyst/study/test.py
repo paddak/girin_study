@@ -47,4 +47,5 @@ od1=pd.merge(od,log,how='left',left_on='order_id',right_on='order_id')
 od1['campaign']=od1.campaign.fillna('organic')
 
 od1['week']=od1.order_date.dt.to_period('W').dt.to_timestamp()
-od1.groupby(by=['campaign','week'])['order_amount'].sum().reset_index()
+od_agg=od1.groupby(by=['campaign','week'])['order_amount'].sum().reset_index()
+od1
